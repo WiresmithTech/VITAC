@@ -21,7 +21,7 @@ The project supports LabVIEW 2015 and later.
 
 #### Pass If Equal 1D Array ####
 
-![pass if equal conn pane](/docs/images/pass if equal 1d array con pane.png)
+![pass if equal conn pane](docs/images/passifequal1darrayconpane.png?raw=true)
 
 Compares two 1D numeric arrays and returns a pass/fail if any elements exceed the provided delta value (default = 0)
 
@@ -31,7 +31,7 @@ The VI takes EXT but has been tested to work with coerced SGL, DBL and integers.
 
 #### Pass If Equal String ####
 
-![pass if equal string conn pane](/docs/images/pass if equal string.png)
+![pass if equal string conn pane](docs/images/passifequalstring.png?raw=true)
 
 Compares two strings and passes if they match.
 
@@ -39,7 +39,7 @@ The results string will tell you which characters don't match (with slash code d
 
 #### Pass If Matches Regular Expression ####
 
-![pass if matches conn pane](/docs/images/pass if matches string.png)
+![pass if matches conn pane](docs/images/passifmatchesstring.png?raw=true)
 
 Compares a string to a regular expression and passes if it matches. This VI uses the same PCRL regular expressions as the matches pattern VI.
 
