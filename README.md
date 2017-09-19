@@ -58,7 +58,7 @@ Given, When, Then drops a flat sequence structure with four frames designed to m
 * Then: Where you perform your comparisons and check your results.
 * Clean Up: A convenient place to close references etc. without interfering with the VI Tester error chain.
 
-Learn more at (https://devs.wiresmithtech.com/blog/given-when-then/)[https://devs.wiresmithtech.com/blog/given-when-then/]
+Learn more at [https://devs.wiresmithtech.com/blog/given-when-then/](https://devs.wiresmithtech.com/blog/given-when-then/)
 
 ![given when then complex example](docs/images/givenwhenthencomplexexample.png?raw=true)
 
@@ -68,7 +68,7 @@ This is a template for testing that an event has fired. You should drop it into 
 
 ![dynamic event test template](docs/images/dynamiceventtestvitester.png?raw=true)
 
-Learn more at (https://devs.wiresmithtech.com/blog/testing-events-vi-tester/)[ https://devs.wiresmithtech.com/blog/testing-events-vi-tester/]
+Learn more at [https://devs.wiresmithtech.com/blog/testing-events-vi-tester/]( https://devs.wiresmithtech.com/blog/testing-events-vi-tester/)
 
 ### Future Work ###
 
