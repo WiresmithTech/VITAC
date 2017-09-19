@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-04-24 18:03:57" Modified_Date="2017-09-19 16:04:40" Creator="James McNally" Comments="" ID="22cc2be698949ae07c8605829f96fe8f">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-04-24 18:03:57" Modified_Date="2017-09-19 17:02:53" Creator="James McNally" Comments="" ID="30e1927d256b118749f650d7254062db">
   <Library_General_Settings>
     <Package_File_Name>Wiresmith_Technology_lib_VITAC_(VI_Tester_Advanced_Comparisons)</Package_File_Name>
-    <Library_Version>1.1.0.7</Library_Version>
+    <Library_Version>1.1.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -31,11 +31,14 @@
     <VI_Package_Configuration_File>VITAC (VI Tester Advanced Comparisons).vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Advanced comparisons for VI Tester</One_Line_Description_Summary>
-      <Description>VI Tester Advanced Comparisons (VITAC) adds support for comparisons either not supported or poorly supported in VI tester.
+      <Description>VI Tester Advanced Comparisons (VITAC) provides some more advanced comparison VIs to support use of VI tester in unit testing.
 
-It also contains templates for common test cases.
+If you are already using VI tester you can substitute some of the test VIs for these to get:
 
-</Description>
+•Comparisons not supported e.g. 1D arrays.
+•Better reporting e.g. where in a string is a failure.
+
+It also adds templates to support common test cases and provide easier to read tests.</Description>
       <Copyright/>
       <Packager/>
       <URL>https://github.com/WiresmithTech/VITAC</URL>
@@ -270,7 +273,7 @@ It also contains templates for common test cases.
         <Path>Templates</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AD1A04054343207F7CB27387249C8241</GUID>
+      <GUID>51B1AC698E29CC5DEA1EA4C49AA4D011</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -319,7 +322,7 @@ It also contains templates for common test cases.
         <Path>Templates\Test Event Response.vit</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>453B9135E51438BE94C1ABBC699B022A</GUID>
+      <GUID>2716354395DDB003CD074CB96E243DE1</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -85,4 +85,6 @@ Feel free to fork this project to fix any bugs. If you have ideas that you want 
 
 ### Who do I talk to? ###
 
+For support, please create an issue on this page so we can work through the problem.
+
 This project was setup by James McNally at Wiresmith Technology. You can get in contact on here as JamesMc86, NI forums as JamesMcN or twitter @jamesmc86
