@@ -45,6 +45,31 @@ Compares a string to a regular expression and passes if it matches. This VI uses
 
 The results string will include the full string and regex if it fails.
 
+### Available Templates ###
+
+In addition to the comparison VIs we have included some templates that we use at Wiresmith Technology to produce better tests.
+
+#### Given, When, Then ####
+
+Given, When, Then drops a flat sequence structure with four frames designed to make tests much easier to read and understand. They are:
+
+* Given: The test preconditions.
+* When: The VI/procedure being tested.
+* Then: Where you perform your comparisons and check your results.
+* Clean Up: A convenient place to close references etc. without interfering with the VI Tester error chain.
+
+Learn more at (https://devs.wiresmithtech.com/blog/given-when-then/)[https://devs.wiresmithtech.com/blog/given-when-then/]
+
+![given when then complex example](docs/images/givenwhenthencomplexexample.png?raw=true)
+
+#### Test Event Response ####
+
+This is a template for testing that an event has fired. You should drop it into the "then" case for comparisons. Either remove the dynamic registration functions or move the event registration to the Given case.
+
+![dynamic event test template](docs/images/dynamiceventtestvitester.png?raw=true)
+
+Learn more at (https://devs.wiresmithtech.com/blog/testing-events-vi-tester/)[ https://devs.wiresmithtech.com/blog/testing-events-vi-tester/]
+
 ### Future Work ###
 
 This is very much an early stage library. Some additional features have been considered but most currently have workarounds with the above support. We will look to add to this in the future though.
