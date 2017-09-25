@@ -18,6 +18,9 @@
 			<Item Name="String Regex Test Case.lvclass" Type="LVClass" URL="../Tests/String Regex Test Case/String Regex Test Case.lvclass"/>
 			<Item Name="Event Test Template Examples.lvclass" Type="LVClass" URL="../Tests/Event Test Template Examples/Event Test Template Examples.lvclass"/>
 		</Item>
+		<Item Name="Templates" Type="Folder" URL="../Templates">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="VITAC.lvlib" Type="Library" URL="../VITAC.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -249,10 +252,7 @@
 				<Item Name="TestSuite.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestSuite.llb/TestSuite.lvclass"/>
 				<Item Name="VITesterUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/VITesterUtilities.lvlib"/>
 				<Item Name="Escape String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Escape String.vi"/>
-				<Item Name="VITAC.lvlib" Type="Library" URL="/&lt;vilib&gt;/Wiresmith Technology/VITAC (VI Tester Advanced Comparisons)/VITAC.lvlib"/>
 			</Item>
-			<Item Name="String Equality Test Case.lvclass" Type="LVClass" URL="/../../Documents/Wiresmith Projects/Open Source Projects/.VITAC/Tests/String Equality Test Case/String Equality Test Case.lvclass"/>
-			<Item Name="1D Array Test Case.lvclass" Type="LVClass" URL="/../../Documents/Wiresmith Projects/Open Source Projects/.VITAC/Tests/1D Array Test Case/1D Array Test Case.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
