@@ -70,6 +70,15 @@ This is a template for testing that an event has fired. You should drop it into 
 
 Learn more at [https://devs.wiresmithtech.com/blog/testing-events-vi-tester/]( https://devs.wiresmithtech.com/blog/testing-events-vi-tester/)
 
+### Usage Examples ###
+
+A project is installed into the LabVIEW example finder showing usage of each component as individual tests. To run them:
+
+1. Search the example finder for VITAC and load the project.
+2. Open VI tester and run the tests.
+
+You can open each test and play with the values to try different scenarios.
+
 ### Future Work ###
 
 This is very much an early stage library. Some additional features have been considered but most currently have workarounds with the above support. We will look to add to this in the future though.
