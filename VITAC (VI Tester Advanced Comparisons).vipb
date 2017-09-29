@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-04-24 18:03:57" Modified_Date="2017-09-25 17:25:14" Creator="James McNally" Comments="" ID="69f39cd92d30e6113793fcfe405b5626">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-04-24 18:03:57" Modified_Date="2017-09-29 10:12:30" Creator="James McNally" Comments="" ID="5e90063c9244336a582115bbad41725b">
   <Library_General_Settings>
     <Package_File_Name>Wiresmith_Technology_lib_VITAC_(VI_Tester_Advanced_Comparisons)</Package_File_Name>
-    <Library_Version>1.1.1.18</Library_Version>
+    <Library_Version>1.1.1.19</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -292,7 +292,7 @@ It also adds templates to support common test cases and provide easier to read t
         <Path>Templates</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>51205CB84BA859F137CFAF17C6F39B07</GUID>
+      <GUID>E1BADC664F5F5FBA0A9D88ADFF3ED495</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -341,7 +341,7 @@ It also adds templates to support common test cases and provide easier to read t
         <Path>Templates\Test Event Response.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B5D311FC3C767B1291175DBAD37BE81A</GUID>
+      <GUID>997B3F14F41059B7380F0A8C5CFBCE49</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
