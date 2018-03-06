@@ -11,11 +11,20 @@
 
 </Property>
 	<Item Name="subVIs" Type="Folder">
+		<Item Name="Search in array" Type="Folder">
+			<Item Name="Pass If In 1D Array (BOOLEAN).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (BOOLEAN).vi"/>
+			<Item Name="Pass If In 1D Array (DBL).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (DBL).vi"/>
+			<Item Name="Pass If In 1D Array (EXT).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (EXT).vi"/>
+			<Item Name="Pass If In 1D Array (INT).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (INT).vi"/>
+			<Item Name="Pass If In 1D Array (SGL).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (SGL).vi"/>
+			<Item Name="Pass If In 1D Array (STRING).vi" Type="VI" URL="../SubVIs/Search in array/Pass If In 1D Array (STRING).vi"/>
+		</Item>
 		<Item Name="Get Array False Details.vi" Type="VI" URL="../SubVIs/Get Array False Details.vi"/>
 		<Item Name="Get String Error Contexts.vi" Type="VI" URL="../SubVIs/Get String Error Contexts.vi"/>
 		<Item Name="Make All Characters Displayable.vi" Type="VI" URL="../SubVIs/Make All Characters Displayable.vi"/>
 	</Item>
 	<Item Name="Pass If Equal 1D Array (Numeric).vi" Type="VI" URL="../Pass If Equal 1D Array (Numeric).vi"/>
 	<Item Name="Pass If Equal String.vi" Type="VI" URL="../Pass If Equal String.vi"/>
+	<Item Name="Pass If In 1D Array.vi" Type="VI" URL="../Pass If In 1D Array.vi"/>
 	<Item Name="Pass If Matches Regular Expression.vi" Type="VI" URL="../Pass If Matches Regular Expression.vi"/>
 </Library>
