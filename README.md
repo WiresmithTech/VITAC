@@ -92,6 +92,8 @@ This is very much an early stage library. Some additional features have been con
 
 Feel free to fork this project to fix any bugs. If you have ideas that you want to contribute then create an issue in the issue log and we can work together to get it into the library.
 
+The project source is in LabVIEW 2015 SP1, please use this version for edits.
+
 ### Who do I talk to? ###
 
 For support, please create an issue on this page so we can work through the problem.
