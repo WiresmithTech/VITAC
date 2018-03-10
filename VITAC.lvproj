@@ -13,6 +13,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tests" Type="Folder">
+			<Item Name="Timestamp Comparison Test Case.lvclass" Type="LVClass" URL="../Tests/Timestamp Comparison Test Case/Timestamp Comparison Test Case.lvclass"/>
 			<Item Name="Search In 1D Array Test Case.lvclass" Type="LVClass" URL="../Tests/Search In 1D Array Test Case/Search In 1D Array Test Case/Search In 1D Array Test Case.lvclass"/>
 			<Item Name="String Equality Test Case.lvclass" Type="LVClass" URL="../Tests/String Equality Test Case/String Equality Test Case.lvclass"/>
 			<Item Name="1D Array Test Case.lvclass" Type="LVClass" URL="../Tests/1D Array Test Case/1D Array Test Case.lvclass"/>

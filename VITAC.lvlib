@@ -25,6 +25,7 @@
 	</Item>
 	<Item Name="Pass If Equal 1D Array (Numeric).vi" Type="VI" URL="../Pass If Equal 1D Array (Numeric).vi"/>
 	<Item Name="Pass If Equal String.vi" Type="VI" URL="../Pass If Equal String.vi"/>
+	<Item Name="Pass If Equal Timestamp.vi" Type="VI" URL="../Pass If Equal Timestamp.vi"/>
 	<Item Name="Pass If In 1D Array.vi" Type="VI" URL="../Pass If In 1D Array.vi"/>
 	<Item Name="Pass If Matches Regular Expression.vi" Type="VI" URL="../Pass If Matches Regular Expression.vi"/>
 </Library>
