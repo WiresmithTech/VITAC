@@ -1,9 +1,5 @@
 node {
   try {
-  
-	stage('Kill LabVIEW') {
-		bat 'taskkill /IM "LabVIEW.exe" /F /FI "STATUS eq RUNNING"'
-	}
 	
     stage ('Checkout') {
         checkout scm
@@ -11,7 +7,7 @@ node {
 
 
     stage ('Unit Test') {
-	       bat "labview-cli -v --kill --lv-ver 2015 \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\run-vi-tester.vi\" -- \"VITAC.lvproj\" \"test_results.xml\" \"${env.WORKSPACE}\""
+	       bat "labview-cli -v --lv-ver 2015 \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\run-vi-tester.vi\" -- \"VITAC.lvproj\" \"test_results.xml\" \"${env.WORKSPACE}\""
 		   junit "test_results.xml"
     }
 
