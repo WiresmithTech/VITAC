@@ -23,7 +23,9 @@
 		<Item Name="Get String Error Contexts.vi" Type="VI" URL="../SubVIs/Get String Error Contexts.vi"/>
 		<Item Name="Make All Characters Displayable.vi" Type="VI" URL="../SubVIs/Make All Characters Displayable.vi"/>
 	</Item>
+	<Item Name="Pass If Equal 1D Array (Boolean).vi" Type="VI" URL="../Pass If Equal 1D Array (Boolean).vi"/>
 	<Item Name="Pass If Equal 1D Array (Numeric).vi" Type="VI" URL="../Pass If Equal 1D Array (Numeric).vi"/>
+	<Item Name="Pass If Equal 1D Array (String).vi" Type="VI" URL="../Pass If Equal 1D Array (String).vi"/>
 	<Item Name="Pass If Equal String.vi" Type="VI" URL="../Pass If Equal String.vi"/>
 	<Item Name="Pass If Equal Timestamp.vi" Type="VI" URL="../Pass If Equal Timestamp.vi"/>
 	<Item Name="Pass If In 1D Array.vi" Type="VI" URL="../Pass If In 1D Array.vi"/>

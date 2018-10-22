@@ -1,7 +1,16 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="15008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -13,12 +22,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tests" Type="Folder">
+			<Item Name="Pass If Equal 1D Array (String) Test Case.lvclass" Type="LVClass" URL="../Tests/Pass If Equal 1D Array (String) Test Case/Pass If Equal 1D Array (String) Test Case.lvclass"/>
 			<Item Name="Pass If Equal Timestamp Test Case.lvclass" Type="LVClass" URL="../Tests/Pass If Equal Timestamp Test Case/Pass If Equal Timestamp Test Case.lvclass"/>
 			<Item Name="Search In 1D Array Test Case.lvclass" Type="LVClass" URL="../Tests/Search In 1D Array Test Case/Search In 1D Array Test Case/Search In 1D Array Test Case.lvclass"/>
 			<Item Name="String Equality Test Case.lvclass" Type="LVClass" URL="../Tests/String Equality Test Case/String Equality Test Case.lvclass"/>
 			<Item Name="1D Array Test Case.lvclass" Type="LVClass" URL="../Tests/1D Array Test Case/1D Array Test Case.lvclass"/>
 			<Item Name="String Regex Test Case.lvclass" Type="LVClass" URL="../Tests/String Regex Test Case/String Regex Test Case.lvclass"/>
 			<Item Name="Event Test Template Examples.lvclass" Type="LVClass" URL="../Tests/Event Test Template Examples/Event Test Template Examples.lvclass"/>
+			<Item Name="Pass If Equal 1D Array (Boolean) Test Case.lvclass" Type="LVClass" URL="../Tests/Pass If Equal 1D Array (Boolean) Test Case/Pass If Equal 1D Array (Boolean) Test Case.lvclass"/>
 		</Item>
 		<Item Name="Templates" Type="Folder" URL="../Templates">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
