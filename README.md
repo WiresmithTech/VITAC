@@ -83,7 +83,6 @@ You can open each test and play with the values to try different scenarios.
 
 This is very much an early stage library. Some additional features have been considered but most currently have workarounds with the above support. We will look to add to this in the future though.
 
-* Timestamp comparisons (Workaround: Convert to numbers and use native passIfEquals.vi or Pass If Equal 1D array).
 * 2D/nD Array. This is very hard to make expandable so currently I recommend just looping over 1D array comparison. Could consider 2D array in the future.
 * Waveform comparison. (Workaround: Split parts and use other comparison VIs.)
 * Error Comparions for codes and displayable text. (Workaround: Split the error and use Pass If Matches Regular Expression on the source string)
