@@ -45,6 +45,44 @@ Compares a string to a regular expression and passes if it matches. This VI uses
 
 The results string will include the full string and regex if it fails.
 
+#### Pass If In 1D Array ####
+
+![pass if in 1D array](docs/images/passifin1darray.png?raw=true)
+
+Searches element in array, and returns pass if element is found. If expected index (optional) does not equal to -1, additionally compares found index with expected; and fails if they are not equal.
+
+This polymorphic VI is implemented for EXT, DBL, SGL, Integers, String, Boolean arrays. The reason for having implementation of floating point arrays separately is comparison results of numbers with different precision (like, "5,2" EXT != "5,2" DBL).
+
+#### Pass If Equal Timestamp ####
+
+![pass if equal timestamp](docs/images/passifequaltimestamp.png?raw=true)
+
+Compares two timestamps and passes if they match.
+
+VI internally converts timestamps to double numbers, and compares them, optionally with delta.
+
+In case of failure, failure message contains exptected and actual timestamps.
+
+#### Pass If Equal 1D Array (String) ####
+
+![pass if equal 1d array string](docs/images/passifequal1darraystring.png?raw=true)
+
+Compares two 1D string arrays and returns a pass if arrays are equal.
+
+The results string will identify the strings that don't match as well as the array index.
+
+String comparison is optionally case-sensitive.
+
+Default is case-sensitive match.
+
+#### Pass If Equal 1D Array (Boolean) ####
+
+![pass if equal 1d array boolean](docs/images/passifequal1darrayboolean.png?raw=true)
+
+Compares two 1D boolean arrays and returns a pass when arrays are equal.
+
+The results string will identify the elements that don't match as well as the array index.
+
 ### Available Templates ###
 
 In addition to the comparison VIs we have included some templates that we use at Wiresmith Technology to produce better tests.
