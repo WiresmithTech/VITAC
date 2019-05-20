@@ -13,8 +13,8 @@ node {
 
 	stage ('Build Output') {
 		bat "if not exist Builds mkdir Builds"
-		bat "labview-cli -v \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\setVipBuildNumber.vi\" -- \"LabVIEW Source\\G CLI.vipb\" \"${env.WORKSPACE}\" ${env.BUILD_NUMBER}"
-		bat "labview-cli -v \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\vipbBuild.vi\" -- \"LabVIEW Source\\G CLI.vipb\" Builds  \"${env.WORKSPACE}\""
+		bat "labview-cli -v \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\setVipBuildNumber.vi\" -- \"VITAC (VI Tester Advanced Comparisons).vipb\" \"${env.WORKSPACE}\" ${env.BUILD_NUMBER}"
+		bat "labview-cli -v \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\vipbBuild.vi\" -- \"VITAC (VI Tester Advanced Comparisons).vipb\" Builds  \"${env.WORKSPACE}\""
 		dir ("Builds") {
 			archiveArtifacts artifacts: '*.vip', fingerprint: true
 			deleteDir()
