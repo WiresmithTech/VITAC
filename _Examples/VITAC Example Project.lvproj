@@ -11,7 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="VITAC Example Test Case.lvclass" Type="LVClass" URL="../VITAC Example Test Case.lvclass"/>
+		<Item Name="VITAC Example Test Case.lvclass" Type="LVClass" URL="../VITAC Example Test Case/VITAC Example Test Case.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="0B2DDAC1EBDDD091B2E934D251FB5792" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/0B2DDAC1EBDDD091B2E934D251FB5792"/>
