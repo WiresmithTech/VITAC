@@ -10,12 +10,17 @@ If you are already using VI tester you can substitute some of the test VIs for t
 * Comparisons not supported e.g. 1D arrays.
 * Better reporting e.g. where in a string is a failure.
 
+### VITAC Requirements ###
+
+VITAC requires LabVIEW 2015 or later and VI Package Manager 2017 or later on Windows operating systems.
+
+It depends on JKI VI Tester which can also be installed through VI Package Manager.
+
 
 ### How do I get set up? ###
 
-A VIPC file is provided in the releases section of this repository. Install this using VI package manager 2014 or later to use.
+A VIP file is provided in the releases section of this repository. Install this using VI package manager 2014 or later to use.
 
-The project supports LabVIEW 2015 and later.
 
 ### Available Functions ###
 
