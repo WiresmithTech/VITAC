@@ -19,7 +19,7 @@ It depends on JKI VI Tester which can also be installed through VI Package Manag
 
 ### How do I get set up? ###
 
-A VIP file is provided in the releases section of this repository. Install this using VI package manager 2014 or later to use.
+It is available on the LabVIEW Tools Network or A VIP file is provided in the releases section of this repository. Install this using VI package manager 2017 or later to use.
 
 
 ### Available Functions ###
