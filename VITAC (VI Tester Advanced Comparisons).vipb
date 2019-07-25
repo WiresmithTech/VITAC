@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2017-04-24 18:03:57" Modified_Date="2018-10-22 10:12:11" Creator="James McNally" Comments="" ID="d99abd2fb5f6b3616c78a67a0c38db8f">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2017-04-24 18:03:57" Modified_Date="2019-06-21 10:31:43" Creator="James McNally" Comments="" ID="a693c95bd5875397a4d1d1d9871158a4">
   <Library_General_Settings>
     <Package_File_Name>Wiresmith_Technology_lib_VITAC_(VI_Tester_Advanced_Comparisons)</Package_File_Name>
-    <Library_Version>1.3.0.20</Library_Version>
+    <Library_Version>1.3.1.30</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -39,13 +39,15 @@ If you are already using VI tester you can substitute some of the test VIs for t
 •Better reporting e.g. where in a string is a failure.
 
 It also adds templates to support common test cases and provide easier to read tests.</Description>
-      <Copyright>Copyright (c) 2018, VITAC Contributors</Copyright>
+      <Copyright>Copyright (c) 2019, VITAC Contributors</Copyright>
       <Packager>James McNally</Packager>
       <URL>https://github.com/WiresmithTech/VITAC</URL>
       <Release_Notes>* 1D Boolean Comparison Test
 * 1D String Comparison Test
 
-All changes courtesy of kosist on github, thanks!</Release_Notes>
+All changes courtesy of kosist on github, thanks!
+
+* Fixed templates searching for class.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -55,7 +57,7 @@ All changes courtesy of kosist on github, thanks!</Release_Notes>
       </Toolkit_VIs>
       <Examples>
         <LLB>false</LLB>
-        <Preserve_Hierarchy>false</Preserve_Hierarchy>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
         <Path/>
       </Examples>
       <Custom_Probes>
@@ -121,15 +123,27 @@ All changes courtesy of kosist on github, thanks!</Release_Notes>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>_Examples</Path>
+        <Path>_Examples/WiresmithTechnology-VITAC.bin3</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>_Examples/VITAC Example Test Case</Path>
         <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>_Examples/WiresmithTechnology-VITAC.bin3</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
+        <Path>_Examples/VITAC Example Project.lvproj</Path>
+        <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Help/VITAC Getting Started.vi</Path>
+        <Destination>8</Destination>
+        <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Password_Overrides>
@@ -354,7 +368,7 @@ All changes courtesy of kosist on github, thanks!</Release_Notes>
         <Path>Pass If Equal Timestamp.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C6B958531F6EA7896C7C8250F9B5DEED</GUID>
+      <GUID>13B2102E8E9261BDF658AFD0C454E6B6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -403,7 +417,7 @@ All changes courtesy of kosist on github, thanks!</Release_Notes>
         <Path>Templates\Test Event Response.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2789E1F28E286F5FD8D5C7A1B685577A</GUID>
+      <GUID>0C5AA9C0C95DAC8944FB19D4AC4C7E3E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
