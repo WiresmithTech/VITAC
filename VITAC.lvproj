@@ -23,6 +23,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tests" Type="Folder">
+			<Item Name="Custom Report Message Test Case.lvclass" Type="LVClass" URL="../Tests/Custom Report Message Test Case/Custom Report Message Test Case.lvclass"/>
 			<Item Name="Pass If Equal 1D Array (String) Test Case.lvclass" Type="LVClass" URL="../Tests/Pass If Equal 1D Array (String) Test Case/Pass If Equal 1D Array (String) Test Case.lvclass"/>
 			<Item Name="Pass If Equal Timestamp Test Case.lvclass" Type="LVClass" URL="../Tests/Pass If Equal Timestamp Test Case/Pass If Equal Timestamp Test Case.lvclass"/>
 			<Item Name="Search In 1D Array Test Case.lvclass" Type="LVClass" URL="../Tests/Search In 1D Array Test Case/Search In 1D Array Test Case/Search In 1D Array Test Case.lvclass"/>
