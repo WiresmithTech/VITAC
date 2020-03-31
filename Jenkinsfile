@@ -7,7 +7,7 @@ pipeline {
   environment {
     LV_VER = 2015
 	LV_BIT = 32
-    G_CLI_PARAMS = "--lv-ver ${env.LV_VER} --x64"
+    G_CLI_PARAMS = "--lv-ver ${env.LV_VER}"
 	VERSION = "1.3.1"
 	FULL_VERSION = VersionNumber(versionNumberString: '${BUILDS_ALL_TIME,X}', versionPrefix: "${VERSION}." , worstResultForIncrement: 'FAILURE') 
   }
