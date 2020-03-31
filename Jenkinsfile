@@ -23,6 +23,7 @@ pipeline {
 		}
 		echo "Building ${FULL_VERSION}"
 		bat "if not exist builds mkdir builds"
+		bat 'g-cli %G_CLI_PARAMS% vipApply -- "VITAC (VI Tester Advanced Comparisons).vipc" %LV_VER% %LV_BIT%'
       }
     }
 	
