@@ -1,30 +1,65 @@
-node {
-  try {
-  
-	stage ('Checkout') {
-		checkout scm
-	}
+pipeline {
+  agent {
+    node {
+      label 'LV2015'
+    }
+  }
+  environment {
+    LV_VER = 2015
+	LV_BIT = 32
+    G_CLI_PARAMS = "--lv-ver ${env.LV_VER} --x64"
+	VERSION = "1.3.1"
+	FULL_VERSION = VersionNumber(versionNumberString: '${BUILDS_ALL_TIME,X}', versionPrefix: "${VERSION}." , worstResultForIncrement: 'FAILURE') 
+  }
+  options {
+    timeout(time:45, unit: 'MINUTES')
+	buildDiscarder(logRotator(numToKeepStr: '100'))
+  }
+  stages {
+    stage('Setup') {
+      steps {
+	    script {
+		  currentBuild.displayName = "${env.FULL_VERSION}"
+		}
+		echo "Building ${FULL_VERSION}"
+		bat "if not exist builds mkdir builds"
+      }
+    }
+	
 
-
-	stage ('Unit Test') {
-		   bat "labview-cli --kill -v --lv-ver 2015 \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\run-vi-tester.vi\" -- \"VITAC.lvproj\" \"test_results.xml\" \"${env.WORKSPACE}\""
-		   junit "test_results.xml"
-	}
-
-	stage ('Build Output') {
-		bat "if not exist Builds mkdir Builds"
-		bat "labview-cli -v --kill \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\setVipBuildNumber.vi\" -- \"VITAC (VI Tester Advanced Comparisons).vipb\" \"${env.WORKSPACE}\" ${env.BUILD_NUMBER}"
-		bat "labview-cli -v \"C:\\Users\\Public\\Documents\\National Instruments\\LV-CLI Common Steps\\steps\\vipbBuild.vi\" -- \"VITAC (VI Tester Advanced Comparisons).vipb\" Builds  \"${env.WORKSPACE}\""
-		dir ("Builds") {
+    stage('Unit Test') {
+      steps {
+        bat 'g-cli %G_CLI_PARAMS% viTester --  -xml "test_results.xml" "VITAC.lvproj"'
+		junit 'test_results.xml'
+      }
+    }
+    stage('Build Outputs') {
+      steps {
+		bat 'g-cli %G_CLI_PARAMS% vipBuild -- -versionNumber %FULL_VERSION% "VITAC (VI Tester Advanced Comparisons).vipb"'
+		dir ("builds") {
 			archiveArtifacts artifacts: '*.vip', fingerprint: true
 			deleteDir()
 		}
-	}
 
-   } catch(any) {
-    currentBuild.result = 'FAILURE'
-    throw any //rethrow exception to prevent the build from proceeding
-   } finally {
-            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'james@wiresmithtech.com', sendToIndividuals: true])
-   }
+      }
+    }
+
+	stage('Release Steps') {
+		when { buildingTag() }
+		steps {
+		    script {
+			  currentBuild.description = "${env.VERSION} Release"
+			  currentBuild.keepLog = true
+			}
+		}
+	}
+  }
+  post {
+    always {
+      step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients([culprits(), requestor(), upstreamDevelopers()]), sendToIndividuals: true])
+	  bat 'g-cli %G_CLI_PARAMS% quitLabVIEW'
+    }
+
+  }
+  
 }
