@@ -37,10 +37,7 @@ pipeline {
     stage('Build Outputs') {
       steps {
 		bat 'g-cli %G_CLI_PARAMS% vipBuild -- -versionNumber %FULL_VERSION% "VITAC (VI Tester Advanced Comparisons).vipb"'
-		dir ("builds") {
-			archiveArtifacts artifacts: '*.vip', fingerprint: true
-			deleteDir()
-		}
+		archiveArtifacts artifacts: '*.vip', fingerprint: true
 
       }
     }
